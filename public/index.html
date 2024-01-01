@@ -10,19 +10,122 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Tablet styles */
-        @media only screen and (max-width: 960px) {
         
-            }
-
         /* Desktop styles */
         @media only screen and (min-width: 960px) {
-         
+            .container{
+                width: 960px;
+            }
+            table .header-left{
+                padding: 37px 15px 70px 15px !important;
+            }
+            .one-solution-table{
+                text-align: center;
+            }
+            .one-solution-image{
+                max-width: 611px;
+            }
+            .advance-table .left-column .left-paragraph{
+                padding: 0px 0px 29px !important;
+            }            
+            .advance-table{
+                padding: 15px 50px 70px 50px !important;
+            }
+            .join-together-table p{
+                font-size: 14px;
+            }
+            .lets-you-row{
+                padding: 0 50px;
+            }
         }
+        /* Tablet styles */
+        @media only screen and (max-width: 960px) {
+            .container{
+                width: 600px;
+            }
+            table .header-left{
+                padding: 17px 15px 70px 15px !important;
+            }
+            .header-right{
+                padding-top: 17px !important;
+            }
+            .lets-you-row{
+                padding: 0 50px;
+            }  
+            .advance-table{
+                padding: 15px 50px 70px 50px !important;
+            }                  
+            }
 
         /* Mobile styles */
         @media only screen and (max-width: 600px) {
-         
+            .container{
+                width: 100px!important;
+            }
+            .image-head{
+                width: 100% !important;
+            }
+            .header-left{
+                width: 100% !important;
+            }
+            .header-right{
+                width: 100% !important;
+            }
+            .advance-table .image-head{
+                width: 100% !important;
+            }
+            .advance-table .left-column{
+                width: 100%;
+            }
+            .advance-table .left-column .left-store{
+                text-align: center;
+            }
+            .advance-table .left-column .left-paragraph{
+                padding: 0px 0px 29px !important;
+            }
+            .advance-table .right-column .right-store{
+                text-align: center;
+            }
+            .advance-table .right-column{
+                width: 100%;
+            }
+            .one-solution-image{
+                width: 100% !important;
+                max-width: 100%;
+            }
+            .lets-you-row .left-column{
+                width: 100%;
+            }           
+            .lets-you-row .center-column{
+                width: 100%;
+            }         
+            .lets-you-row .right-column{
+                width: 100%;
+            }
+            .join-left-column{
+                text-align: center;
+                width: 100%;
+            }
+            .join-right-column{
+                width: 100%;
+                text-align: center;
+            }            
+            .join-center-column{
+                width: 100%;
+                text-align: center;
+            }
+            .first-widget-row .left-column{
+                padding: 0px 30px 0px 0px !important;
+            }     
+            .first-widget-row .left-column p{
+                padding-bottom: 0 !important;
+            }   
+           .first-widget-row-right{
+                padding: 0px 30px 15px 30px !important;
+            }     
+           .third-widget-row-left{
+            padding: 0px 30px 5px 40px !important;
+           }                       
         }
     </style>
 </head>
@@ -56,7 +159,7 @@
                         </table>
                         <!-- end of left column -->
                         <!-- start of right column -->
-                        <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif; background: white;">
+                        <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif; background: white; padding-top: 16px;">
                             <tr>
                                 <td style="color: #7d7d7d; text-decoration: none;">
                                     <table class="menu-table4" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
@@ -75,7 +178,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td align="center" style="vertical-align: bottom ; padding-top: 16px;">                                  
+                                <td align="center" style="vertical-align: bottom ;">                                  
                                     <img src="/img/smartwatch.png" style="position: relative; bottom: -7px;">
                                 </td>
                             </tr>
@@ -192,12 +295,12 @@
                         padding: 15px 15px 70px 15px; background: white;">
                             <tr>
                                 <td align="center">
-                                    <img src="/img/image_head.jpg" alt="">  
+                                    <img class="image-head" src="/img/image_head.jpg" alt="">  
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <h3 align="center" style="font-family: 'Open Sans', sans-serif;color: #333333; padding: 25px 0 5px 0; font-size: 24px; font-weight: 300;text-transform: capitalize; margin: 0;">World's <span style="font-weight: 500;">most advanced App</span> <br>with High-Tech solutions</h3>
+                                    <h3 align="center" style="font-family: 'Open Sans', sans-serif;color: #333333; padding: 25px 0 10px 0; font-size: 24px; font-weight: 300;text-transform: capitalize; margin: 0;">World's <span style="font-weight: 500;">most advanced App</span> <br>with High-Tech solutions</h3>
                                 </td>
                             </tr>
                             <tr>
@@ -207,11 +310,11 @@
                                     padding: 15px 15px 0px 15px;">
                                         <tr>
                                             <td>
-                                                <p style="font-size: 14px; margin: 0; line-height: 1.8; font-weight: 400; color: #7f8887; padding: 0px 0px 53px;">The Strong museum has collected more than 55,000 video games and related artifacts from the history of gaming.</p>
+                                                <p class="left-paragraph" style="font-size: 14px; margin: 0; line-height: 1.8; font-weight: 400; color: #7f8887; padding: 0px 0px 29px;">The Strong museum has collected more than 55,000 video games and related artifacts from the history of gaming.</p>
                                             </td>
                                         </tr>
                                         <tr>                                            
-                                            <td align="right"><img src="/img/appstore.png" alt=""></td>
+                                            <td align="right" class="left-store"><img src="/img/appstore.png" alt=""></td>
                                         </tr>
                                     </table>
                                     <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
@@ -220,11 +323,11 @@
                                         <tr>
                                             <td>
                                                 
-                                                <p style="font-size: 14px; margin: 0; line-height: 1.8; font-weight: 400; color: #7f8887; padding: 0px 0px 29px;">Remote Mouse lets you use your iPhone, Android or Windows Phone as a touchpad to control your onscreen cursor in a pinch</p>
+                                                <p class="right-paragraph" style="font-size: 14px; margin: 0; line-height: 1.8; font-weight: 400; color: #7f8887; padding: 0px 0px 29px;">Remote Mouse lets you use your iPhone, Android or Windows Phone as a touchpad to control your onscreen cursor in a pinch</p>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="left"><img src="/img/playstore.png" alt=""></td>
+                                            <td align="left" class="right-store"><img src="/img/playstore.png" alt=""></td>
                                         </tr>
                                      </table>
                                 </td>
@@ -239,7 +342,7 @@
                         <table class="one-solution-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Open Sans', sans-serif; padding: 50px 0px; background: #141414;">
                             <tr>
                                 <td>
-                                    <img src="/img/one_app.jpg" alt="">
+                                    <img class="one-solution-image" src="/img/one_app.jpg" alt="">
                                 </td>
                             </tr>
                         </table>
@@ -253,13 +356,13 @@
                         style="font-family: 'Open Sans', sans-serif;
                         color: #7d7d7d;
                         padding: 10px 15px 0 15px; background: white;">
-                        <h3 align="center" style="font-family: 'Open Sans', sans-serif;color: #333333; padding: 50px 0 5px 0; font-size: 24px; font-weight: 300;text-transform: capitalize; margin: 0;">Features<span style="font-weight: 500;"> All Joined Together</span> in One App</h3>
+                        <h3 width="100%" align="center" style="font-family: 'Open Sans', sans-serif;color: #333333; padding: 50px 5px 5px 5px; font-size: 24px; font-weight: 300;text-transform: capitalize; margin: 0;">Features<span style="font-weight: 500;"> All Joined Together</span> in One App</h3>
                         <tr>
                             <td>
-                            <table class="header-left" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                            <table class="join-left-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                             style="font-family: 'Open Sans', sans-serif;
                             color: #7d7d7d;
-                            padding: 36px 15px 70px 30px;">
+                            padding: 36px 15px 50px 30px;">
                                 <tr>
                                     <td align="center"><img src="/img/watch_screen.png" alt=""></td>
                                 </tr>
@@ -273,44 +376,39 @@
                                     <td align="center" ><a href="#" style=" font-weight: 400; font-size: 12px; color: #2792ec; text-decoration: none;">Learn more</a></td>
                                 </tr>
                             </table>
-                            </td>
-                        <td>
-                            <table class="header-left" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
-                            style="font-family: 'Open Sans', sans-serif;
-                            color: #7d7d7d;
-                            padding: 0px 15px 70px 15px;">
-                                <tr>
-                                    <td><img src="/img/watch_screen.png" alt=""></td>
-                                </tr>
-                                <tr>
-                                    <td align="center"><h5 style="color: #333333; padding: 15px 0 5px; font-weight: 600; font-size: 14px; margin: 0;">SHARE</h5></td>
-                                </tr>
-                                <tr>
-                                    <td align="center"><p style="padding: 0; font-weight: 400; font-size: 12px; color: #7f8887; line-height: 1.8; margin: 0;">Hero is a mobile payment system that could...</p></td>                                
-                                </tr>
-                            </table>
-                            
-                        </td>
-                        <td>
-                            <table class="header-left" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
-                            style="font-family: 'Open Sans', sans-serif;
-                                color: #7d7d7d;
-                                padding: 36px 15px 70px 15px;">
-                                    <tr>
-                                        <td><img src="/img/watch_screen.png" alt=""></td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center"><h5 style="color: #333333; padding: 15px 0 5px; font-weight: 600; font-size: 14px; margin: 0;">STATS</h5></td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center"><p style="padding: 0; font-weight: 400; font-size: 12px; color: #7f8887; line-height: 1.8; margin: 0; padding-bottom: 15px;">Gemalto says it's looking into a report that it's ...</p></td>                                
-                                    </tr>
-                                    <tr>
-                                        <td align="center" ><a href="#" style=" font-weight: 400; font-size: 12px; color: #2792ec; text-decoration: none;">Learn more</a></td>
-                                    </tr>
-                                </table>
-                        </td>
-                        </tr>
+                                    <table class="join-center-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                    style="font-family: 'Open Sans', sans-serif;
+                                    color: #7d7d7d;
+                                    padding: 36px 15px 50px 15px;">
+                                        <tr>
+                                            <td align="center"><img src="/img/watch_screen.png" alt=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center"><h5 style="color: #333333; padding: 15px 0 5px; font-weight: 600; font-size: 14px; margin: 0;">SHARE</h5></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center"><p style="padding: 0; font-weight: 400; font-size: 12px; color: #7f8887; line-height: 1.8; margin: 0;">Hero is a mobile payment system that could...</p></td>                                
+                                        </tr>
+                                    </table>
+                                    <table class="join-right-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                    style="font-family: 'Open Sans', sans-serif;
+                                        color: #7d7d7d;
+                                        padding: 36px 15px 50px 15px;">
+                                            <tr>
+                                                <td align="center"><img src="/img/watch_screen.png" alt=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><h5 style="color: #333333; padding: 15px 0 5px; font-weight: 600; font-size: 14px; margin: 0;">STATS</h5></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><p style="padding: 0; font-weight: 400; font-size: 12px; color: #7f8887; line-height: 1.8; margin: 0; padding-bottom: 15px;">Gemalto says it's looking into a report that it's ...</p></td>                                
+                                            </tr>
+                                            <tr>
+                                                <td align="center" ><a href="#" style=" font-weight: 400; font-size: 12px; color: #2792ec; text-decoration: none;">Learn more</a></td>
+                                            </tr>
+                                        </table>
+                                </td>
+                            </tr>
                         </table>
                     </td>
                 </tr>
@@ -319,21 +417,21 @@
                 <!--Start First Row-->
                 <tr style="background:#fafafa">
                     <td>
-                        <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                        <table class="first-widget-row" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                         style=
                         "font-family: 'Open Sans', sans-serif;
                         color: #7d7d7d;
                         padding: 30px 30px 15px 30px;"">
                         <tr>
                             <td>
-                                <table class="header-left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                <table class="left-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
                                         style=
                                          "font-family: 'Open Sans', sans-serif;
                                          color: #333333;
                                          padding: 0;">
                                          <tr>
-                                            <td align="center" style="padding-top: 15px;"><img src="/img/phone_icon.png" alt=""></td>
-                                            <td align="center"><h5 style="color: #333333; padding: 15px 15px 0 0; font-weight: 600; font-size: 14px; margin: 0; text-transform: uppercase;">Responsive Layout</h5></td>
+                                            <td align="left" style="padding-top: 15px;"><img src="/img/phone_icon.png" alt=""></td>
+                                            <td align="left"><h5 style="color: #333333; padding-top: 15px; font-weight: 600; font-size: 14px; margin: 0; text-transform: uppercase;">Responsive Layout</h5></td>
                                          </tr>
                                 </table>
                             </td>
@@ -344,21 +442,21 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                    <table class="first-widget-row-right" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                         style=
                         "font-family: 'Open Sans', sans-serif;
                         color: #7d7d7d;
-                        padding: 30px 30px 15px 30px;"">
+                        padding: 30px 30px 15px 30px; ">
                         <tr>
                             <td>
-                                <table class="header-left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                <table class="right-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
                                         style=
                                          "font-family: 'Open Sans', sans-serif;
                                          color: #333333;
                                          padding: 0;">
                                          <tr>
-                                            <td style="padding-top: 15px;"><img src="/img/eye_icon.png" alt=""></td>
-                                            <td style="padding: 15px 45px 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px;">Retina Ready</td>
+                                            <td align="left" style="padding-top: 15px;"><img src="/img/eye_icon.png" alt=""></td>
+                                            <td align="left" style="padding-right: 60px;padding-top: 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Retina Ready</td>
                                          </tr>
                                 </table>
                             </td>
@@ -374,14 +472,14 @@
                 </tr>
                 <tr style="background:#fafafa">
                     <td>
-                        <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                        <table class="second-widget-row" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                         style=
                         "font-family: 'Open Sans', sans-serif;
                         color: #7d7d7d;
                         padding: 0px 30px 15px 30px;"">
                         <tr>
                             <td>
-                                <table class="header-left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                <table class="left-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
                                         style=
                                          "font-family: 'Open Sans', sans-serif;
                                          color: #333333;
@@ -399,14 +497,14 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                    <table class="second-widget-row" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                         style=
                         "font-family: 'Open Sans', sans-serif;
                         color: #7d7d7d;
                         padding: 0px 30px 15px 30px;"">
                         <tr>
                             <td>
-                                <table class="header-left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                <table class="right-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
                                         style=
                                          "font-family: 'Open Sans', sans-serif;
                                          color: #333333;
@@ -429,14 +527,14 @@
                 </tr>
                 <tr style="background:#fafafa">
                     <td>
-                        <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                        <table class="third-widget-row-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                         style=
                         "font-family: 'Open Sans', sans-serif;
                         color: #7d7d7d;
                         padding: 0 30px 30px 40px;"">
                         <tr>
                             <td>
-                                <table class="header-left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                <table class="left-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
                                         style=
                                          "font-family: 'Open Sans', sans-serif;
                                          color: #333333;
@@ -454,21 +552,21 @@
                             </td>
                         </tr>
                     </table>
-                    <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                    <table class="third-widget-row" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                         style=
                         "font-family: 'Open Sans', sans-serif;
                         color: #7d7d7d;
                         padding: 0 30px 30px 40px;"">
                         <tr>
                             <td>
-                                <table class="header-left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                                <table class="right-column" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
                                         style=
                                          "font-family: 'Open Sans', sans-serif;
                                          color: #333333;
                                          padding: 0;">
                                          <tr>
                                             <td style="margin: 0;padding: 0; padding-top: 15px; border-right: 0; margin-right: 0;"><img src="/img/share_icon.png" alt=""></td>
-                                            <td style="padding: 15px 50px 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px; margin: 0;">Social Share</td>
+                                            <td style="padding: 15px 65px 0 0; font-weight: 600; text-transform: uppercase; font-size: 14px; margin: 0;">Social Share</td>
                                          </tr>
                                 </table>
                             </td>
@@ -497,7 +595,7 @@
                     </td>
                 </tr>
                 <!--End of Interest Section-->
-                <tr style="">
+                <tr>
                     <td style="background: white;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                         <h2 style="font-family: 'Open Sans', sans-serif; font-weight: 700; color: #1b1b1b; text-transform: uppercase; padding-top: 10px;">Hero</h2>
                     </td>
